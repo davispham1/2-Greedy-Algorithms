@@ -6,6 +6,7 @@ to compile/build and run:
 
 ```
 or any py
+- to run example
 python3 src/main.py < example/example.in
 
 python3 src/main.py < tests/data1.in
