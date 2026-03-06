@@ -17,12 +17,12 @@ def lru(k, requests):
             lru = None
             lru_time = None
             for i in cache:
-                used_time = last_used[i]
+                used_time = last_time[i]
                 if lru_time is None or used_time < lru_time:
                     lru_time = used_time
                     lru = i
             cache.remove(lru)
-            last_used.pop(lru, None)
+            last_time.pop(lru, None)
 
         cache.add(x)
         last_time[x] = t
